@@ -1,0 +1,10 @@
+<odoo>
+    <record id="action_persons" model="ir.actions.act_window">
+        <field name="name">Persons</field>
+        <field name="res_model">persons.person</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_persons_root" name="Persons" parent="website.main_menu" action="action_persons"/>
+    <menuitem id="menu_persons" name="Persons List" parent="menu_persons_root" action="action_persons"/>
+</odoo>
