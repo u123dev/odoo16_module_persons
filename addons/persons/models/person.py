@@ -12,7 +12,7 @@ class Person(models.Model):
     last_name = fields.Char(string="Last Name", required=True)
     full_name = fields.Char(string="Full Name", compute="_compute_full_name", store=True)
     birthday = fields.Date(string="Birthday")
-    age = fields.Integer(string="Age", compute="_compute_age", store=True)
+    age = fields.Integer(string="Age", compute="_compute_age", store=False)
     sex = fields.Selection([
         ("male", "Male"),
         ("female", "Female"),
